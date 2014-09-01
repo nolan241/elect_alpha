@@ -11,11 +11,16 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :post %><br>
-    <%= f.text_field :post %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+      <%= f.label :post, class: "col-sm-2 control-label" %>
+      <div class="col-sm-6">
+          <%= f.text_area :post, class: "form-control", rows: "4" %>
+      </div>
+
+
+      <div class="col-sm-offset-2 col-sm-6">
+          <%= f.submit "Update", class: "btn btn-primary" %>
+      </div>
+
+
+
 <% end %>
